@@ -1,0 +1,34 @@
+Name:                fdds
+Version:             0.1
+License:             PublicDomain
+Author:              max
+Category:            Web
+
+Build-type:          Simple
+
+-- Extra files to be distributed with the package, such as examples or
+-- a README.
+-- Extra-source-files:  
+
+-- Constraint on the version of Cabal needed to build this package.
+Cabal-version:       >=1.2
+
+
+Executable fdds
+  -- .hs or .lhs file containing the Main module.
+  Main-is:           fdds.hs 
+  
+  -- Packages needed in order to build this package.
+  Build-depends:     base, containers,
+                     mtl, transformers,
+                     network, HTTP,
+                     text, bytestring,
+                     tagsoup
+
+  
+  -- Modules not exported by this package.
+  -- Other-modules:       
+  
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- Build-tools:         
+  
